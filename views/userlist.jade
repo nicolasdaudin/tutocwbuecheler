@@ -6,4 +6,8 @@ block content
 	ul
 		each user, i in userlist
 			li
-				a(href="mailto:#{user.email}")= user.username
+				a(href="mailto:#{user.email}")= user.username 
+				|  et 
+				// edituser/nicdo77 for example
+				a(href="edituser/#{user.username}") MODIFIER
+				

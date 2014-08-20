@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1= title
+	form#formEditUser(name="edituser",method="post",action="/modifyuser")
+		input#inputNewUserName(type="text",value="#{user.username}",name="username")
+		input#inputUserEmail(type="text",value="#{user.email}",name="useremail")
+		input#inputOldUserName(type="hidden",value="#{user.username}",name="oldusername")
+		button#btnSubmit(type="submit") Modifiez cet utilisateur
