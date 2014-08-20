@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('ec2-54-183-136-164.us-west-1.compute.amazonaws.com:27017/tutocwbuecheler');
-console.log('db found:'+db);
+/*console.log('db found:'+db);*/
 
 var routes = require('./routes/index');
 var users = require('./routes/users');

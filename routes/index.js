@@ -14,15 +14,46 @@ router.get('/helloworld', function (req,res){
 
 /* GET Userist page. */
 router.get('/userlist',function(req,res){
-	var db = req.db;
-	console.log('userlist db is ' + utils.objToString(db));
-	var collection = db.get('usercollection');
-	console.log('collection found is ' + utils.objToString(collection));
+	var db = req.db;	
+	var collection = db.get('usercollection');	
 	collection.find({},{},function(e,docs){
 		res.render('userlist',{
 			"userlist":docs
 		});
 	});
+});
+
+/* GET New User page. */
+router.get('/newuser', function(req,res){
+	res.render('newusery',{title: 'Add New User'});
+});
+
+/* POST to Add User Service */
+router.post('/adduser', function(req,res){
+	var db = req.db;
+
+	// form values. There rely on the 'name' attributes
+	var userName = req.body.username;
+	var userEmail = req.body.useremail;
+
+	var collection = db.get('usercollection');
+
+	// INSEEERRTTT
+	collection.insert({
+		"username" : userName,
+		"email" : userEmail
+	}, function(err,doc){
+		if (err){
+			// It failed, return an error
+			res.send("There was a problem adding the information to the DB");
+		} else {
+			// If it worked, set the header so the address bar doesn't still say 'adduser'
+			res.location("userlist");
+			// and forward to success page
+			res.redirect("userlist");
+		}
+	});
+
 });
 
 module.exports = router;
