@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"user",
+				"username"
+			],
+			[
+				"username",
+				"username"
+			],
+			[
+				"userEmail",
+				"userEmail"
+			],
+			[
 				"obj",
 				"objToString"
 			],
@@ -27,7 +39,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 1662,
+				"buffer_size": 1666,
 				"line_ending": "Unix"
 			}
 		},
@@ -35,7 +47,15 @@
 			"file": "routes/index.js",
 			"settings":
 			{
-				"buffer_size": 721,
+				"buffer_size": 2816,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/edituser.jade",
+			"settings":
+			{
+				"buffer_size": 409,
 				"line_ending": "Unix"
 			}
 		},
@@ -51,7 +71,7 @@
 			"file": "views/userlist.jade",
 			"settings":
 			{
-				"buffer_size": 133,
+				"buffer_size": 235,
 				"line_ending": "Unix"
 			}
 		},
@@ -88,6 +108,7 @@
 	},
 	"file_history":
 	[
+		"/C/smd/dev/tutocwbrestful/package.json"
 	],
 	"find":
 	{
@@ -123,7 +144,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -159,15 +180,15 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 1662,
+						"buffer_size": 1666,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								281,
-								281
+								901,
+								901
 							]
 						],
 						"settings":
@@ -177,7 +198,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 225.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -187,15 +208,15 @@
 					"file": "routes/index.js",
 					"settings":
 					{
-						"buffer_size": 721,
+						"buffer_size": 2816,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								69,
-								74
+								2233,
+								2233
 							]
 						],
 						"settings":
@@ -204,13 +225,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 886.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"file": "views/edituser.jade",
+					"settings":
+					{
+						"buffer_size": 409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								409,
+								409
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "utils.js",
 					"settings":
 					{
@@ -236,24 +283,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "views/userlist.jade",
 					"settings":
 					{
-						"buffer_size": 133,
+						"buffer_size": 235,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								50,
-								50
+								197,
+								197
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Perl/Perl.tmLanguage"
+							"syntax": "Packages/Perl/Perl.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -262,7 +310,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "views/helloworld.jade",
 					"settings":
 					{
